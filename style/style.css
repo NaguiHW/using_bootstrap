@@ -1,0 +1,71 @@
+body{
+    font-family: 'Heebo', sans-serif !important;
+}
+
+/* -------------------------------------- */
+/* -------------   HEADER   ------------- */
+/* -------------------------------------- */
+
+.header-left p{
+    margin-bottom: 15px;
+}
+
+.header {
+    background-color: red;
+    max-width: 1310px !important;
+}
+
+.nw-main-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.nw-main-logo img{
+    max-width: 400px;
+    max-height: 60px;
+    object-fit: contain;
+    margin: 15px auto;
+}
+
+.btn-white{
+    background-color: white;
+    color: red;
+    border: none;
+    font-weight: bold;
+    padding: 5px 15px;
+    font-size: 18px;
+}
+
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+.header-right a {
+    color: white;
+    margin: auto 10px;
+}
+
+.header-right a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 990px){
+    .row div:nth-of-type(1){
+        display: none;
+    }
+
+    .nw-main-logo {
+        justify-content: flex-start;
+    }
+
+    .nw-main-logo img{
+        width: 100px;
+    }
+
+    .header-right{
+        margin: 3px auto;
+    }
+}
