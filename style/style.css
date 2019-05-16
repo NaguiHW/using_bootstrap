@@ -49,6 +49,35 @@ body{
     height: 40px;
 }
 
+/* -------------------------------------- */
+/* ---------   NAVIGATION MENU   -------- */
+/* -------------------------------------- */
+
+.nav-menu{
+    border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+.nav-menu-item {
+    margin: 10px 0;
+    max-width: 200px;
+}
+
+.nav-menu a{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.border-right{
+    border-right: 1px solid gray;
+    padding: 0 15px;
+}
+
+#search{
+    max-width: 100px;
+}
+
 @media only screen and (max-width: 992px){
     
     /* -------------------------------------- */
@@ -81,5 +110,13 @@ body{
         height: 20px;
         padding: 2px 5px !important;
         align-self: center;
+    }
+
+    /* -------------------------------------- */
+    /* ---------   NAVIGATION MENU   -------- */
+    /* -------------------------------------- */
+
+    .nav-menu{
+        display: none;
     }
 }
