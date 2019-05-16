@@ -6,136 +6,80 @@ body{
 /* -------------   HEADER   ------------- */
 /* -------------------------------------- */
 
-.header-left p{
-    margin-bottom: 15px;
-}
-
 .header {
-    background-color: red;
-    max-width: 1310px !important;
-    padding-bottom: 25px;
+    background-color: rgb(224, 26, 0);
 }
 
-.nw-main-logo {
+.header img {
+    width: 400px;
+    height: 60px;
+    margin: 10px auto;
+    object-fit: contain;
+}
+
+.header .row div:nth-of-type(1){
+    color: white;
+    align-self: flex-end;
+    margin-bottom: 5px;
+}
+
+.header .row div:nth-of-type(2){
     display: flex;
     justify-content: center;
 }
 
-.nw-main-logo img{
-    max-width: 400px;
-    max-height: 60px;
-    object-fit: contain;
-    margin: 15px auto;
-}
-
-.btn-white{
-    background-color: white;
-    color: red;
-    border: none;
-    font-weight: bold;
-    padding: 5px 15px;
-    font-size: 18px;
-}
-
-.header-right {
+.header .row div:nth-of-type(3){
     display: flex;
+    color: white;
+    align-self: flex-end;
     justify-content: flex-end;
-    margin-bottom: 15px;
+    padding: 0;
 }
 
-.header-right a {
-    color: white;
-    margin: auto 10px;
+.header div p{
+    margin: 10px 5px;
 }
 
-.header-right a:hover {
-    text-decoration: none;
-    color: white;
-}
-
-/* -------------------------------------- */
-/* ---------   NAVIGATION MENU   -------- */
-/* -------------------------------------- */
-
-.nav-menu{
-    max-width: 1310px !important;
-    margin-top: -24px;
-    padding-left: 0 !important;
-}
-
-.nav {
+.header div button{
     background-color: white;
-    clip-path: polygon(0% 0%, 97% 0%, 100% 50%, 97% 100%, 0% 100%);
+    color: rgb(224, 26, 0);
+    margin: 0 20px 10px;
+    border: none;
+    padding: 5px 10px !important;
+    height: 40px;
 }
 
-.nav-link {
-    color: black;
-    font-size: 20px;
-}
-
-.nav-link:hover {
-    color: red;
-}
-
-.border-right{
-    border-right: 1px solid gray;
-}
-
-.form-inline{
-    margin-left: 25px;
-}
-
-/* -------------------------------------- */
-/* -----------   MEDIA QUERY   ---------- */
-/* -------------------------------------- */
-
-@media only screen and (max-width:1200px){
-
-    /* -------------------------------------- */
-    /* ---------   NAVIGATION MENU   -------- */
-    /* -------------------------------------- */
-
-    .nav-link {
-        padding: 5px 8px !important;
-    }
-
-    .form-inline{
-        margin-left: 5px;
-    }
-
-}
-
-@media only screen and (max-width: 990px){
+@media only screen and (max-width: 992px){
     
     /* -------------------------------------- */
     /* -------------   HEADER   ------------- */
     /* -------------------------------------- */
     
-    .header{
-        padding-bottom: 0;
-    }
-
-    .row div:nth-of-type(1){
+    .header .row div:nth-of-type(1){
         display: none;
     }
-    
-    .nw-main-logo {
+
+    .header .row div:nth-of-type(2){
+        display: flex;
         justify-content: flex-start;
     }
-    
-    .nw-main-logo img{
-        width: 100px;
-    }
-    
-    .header-right{
-        margin: 3px auto;
-    }
-    
-    /* -------------------------------------- */
-    /* ---------   NAVIGATION MENU   -------- */
-    /* -------------------------------------- */
 
-    .nav-menu{
-        display: none;
+    .header img {
+        width: 130px;
+        height: 20px;
+        margin: 5px 0;
+    }
+
+    .header .row div:nth-of-type(3){
+        align-self: center;
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .header div button{
+        margin: 0 10px;
+        height: 20px;
+        padding: 2px 5px !important;
+        align-self: center;
     }
 }
