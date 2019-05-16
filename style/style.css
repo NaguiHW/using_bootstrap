@@ -69,13 +69,20 @@ body{
     text-align: center;
 }
 
+.nav-menu a:hover{
+    color: rgb(224, 26, 0);
+    text-decoration: none;
+}
+
 .border-right{
     border-right: 1px solid gray;
-    padding: 0 15px;
+    padding: 0 10px 0 5px;
 }
 
 #search{
     max-width: 100px;
+    border: none;
+    align-self: center;
 }
 
 @media only screen and (max-width: 992px){
