@@ -97,6 +97,10 @@ body{
     margin: 10px 0;
 }
 
+.news-container{
+    margin-bottom: 10px;
+}
+
 .news-container img {
     width: 100%;
 }
@@ -144,6 +148,7 @@ body{
 .stories-news{
     display: flex;
     padding: 5px 0 15px;
+    margin-top: 5px;
 }
 
 .stories-news div:nth-of-type(2){
@@ -164,6 +169,43 @@ body{
 .stories-news a:hover{
     color: black;
     text-decoration-color: rgb(224, 26, 0);
+}
+
+/* -----------  RIGHT CONTAINER  ----------*/
+
+.opinion{
+    display: flex;
+    padding-bottom: 5px;
+    margin: 5px 0;
+}
+
+.opinion img{
+    width: 65px;
+    margin-right: 5px;
+    padding-top: 5px; 
+}
+
+.article-title a{
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    line-height: 16px;
+}
+
+.article-title a:hover{
+    color: rgb(224, 26, 0);
+    text-decoration: none;
+}
+
+.latest-news{
+    display: flex;
+    margin: 5px 0;
+    padding: 5px 0;
+}
+
+.latest-news img {
+    width: 105px;
+    margin-right: 5px;
 }
 
 @media only screen and (max-width: 992px){
@@ -205,6 +247,26 @@ body{
     /* -------------------------------------- */
 
     .nav-menu{
+        display: none;
+    }
+
+    /* -------------------------------------- */
+    /* -----------   MAIN NEWS   ------------ */
+    /* -------------------------------------- */
+
+    .main-news-middle .other {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+
+    .stories-news img {
+        width: 258px;
+    }
+
+    .other {
         display: none;
     }
 }
