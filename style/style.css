@@ -273,6 +273,12 @@ body{
     font-size: 14px;
 }
 
+.featured-slideshows img{
+    margin: 10px 0;
+    width: 350px;
+    height: auto;
+}
+
 @media only screen and (max-width: 992px){
     
     /* -------------------------------------- */
